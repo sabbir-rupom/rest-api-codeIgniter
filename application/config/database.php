@@ -7,7 +7,7 @@ $query_builder = TRUE;
 $host = $username = $password = '';
 
 switch (ENVIRONMENT) {
-    case 'testing':
+    case 'test':
     case 'production':
     case 'development':
     default:
