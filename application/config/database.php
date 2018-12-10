@@ -7,21 +7,14 @@ $query_builder = TRUE;
 $host = $username = $password = '';
 
 switch (ENVIRONMENT) {
-    case 'development':
-        $host = 'localhost';
-        $username = 'root';
-        $password = '123';
-        $database = 'test';
-        break;
     case 'testing':
     case 'production':
+    case 'development':
+    default:
         $host = 'localhost';
         $username = 'root';
         $password = '123';
         $database = 'test';
-        break;
-
-    default:
         break;
 }
 
